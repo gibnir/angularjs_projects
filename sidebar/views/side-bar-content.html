@@ -1,0 +1,25 @@
+<div ng-controller="sidebarCtrl">
+
+	<div class="main" ng-hide="status">
+		<header>
+			<h1>Reports-{{items.length}}</h1>
+			<div class="inner-section pull-right">
+				<button>
+					<span>x</span>
+				</button>
+			</div>
+		</header>
+
+		<nav>
+			<input ng-model="query" type="search" placeholder="search">
+		</nav>
+
+		<section>
+			<ul>
+				<li ng-repeat="item in items | filter:query | orderBy:'updated'">
+					<item-info info="item"></item-info>
+				</li>
+			</ul>
+		</section>
+	</div>
+</div>

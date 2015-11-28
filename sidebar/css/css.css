@@ -1,14 +1,89 @@
-
-
-
-@media (min-width: 768px) {
-
+html { 
+    height:100%;
+}
+body { 
+    min-height:100%;
+	font-family: Verdana, sans-serif;
+	font-size:0.8em;
+	margin: 0;
+}
+h1 {
+	color: #529bcd;
+    display: inline-block;
+    font-weight: 100;
 }
 
-@media (min-width: 992px) {
-
+header {
+	padding: 0 5px; 
 }
 
-@media (min-width: 1200px) {
+header, nav {
+	border-bottom:1px solid #dddddd;
+}
+nav ul {
+	margin:0; 
+	padding:0;
+}
+nav ul li {
+	display:inline; 
+	margin:5px;
+}
 
+input {
+	width: 100%;
+    padding: 5px;
+    width: 100%;
+}
+
+ul {
+	list-style:none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    border-bottom: 1px solid #ccc;
+    font-size: 11px;
+    height: 53px;
+    line-height: 25px;
+    padding: 5px;
+}
+
+section {
+	height: 350px;
+	overflow: auto;
+}
+
+button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+}
+
+.custom-color {
+	color: #979797;
+}
+
+.state-hidden {
+	display: none;
+}
+
+.pull-right {
+	float: right;
+}
+
+.inner-section {
+	display: inline-block;
+}
+
+.inner-section:first-child {
+	max-width: 60%;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.main {
+	width: 250px;
+	margin: 0 auto;
+	border:1px solid #dddddd;
 }
