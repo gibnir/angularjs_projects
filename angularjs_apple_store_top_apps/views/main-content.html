@@ -1,0 +1,19 @@
+<div ng-controller="mainCtrl">
+	<div class="main">
+		<header>
+			<h3>the top 12 paid apps <br >in the Apple App Store</h3>
+		</header>
+
+		<nav>
+			<input ng-model="query" type="search" placeholder="search">
+		</nav>
+
+		<section>
+			<ul>
+				<li ng-repeat="item in items | filter:query | limitTo: 12">
+					<item-info info="item"></item-info>
+				</li>
+			</ul>
+		</section>
+	</div>
+</div>

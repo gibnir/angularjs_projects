@@ -1,0 +1,6 @@
+<button ng-click="changeState()">
+<span>{{info.name}}</span><span>{{info.author}}</span><br >
+<img src="{{info.image}}" alt="image" height="42" width="42"><span>{{info.price}}<span> <br >
+<span>{{info.releaseDate}}</span><br >
+</button>
+<span ng-if="state">{{info.summary}}</span>
